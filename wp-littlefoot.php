@@ -31,7 +31,7 @@ if ( file_exists( WP_LITTLEFOOT_PATH . 'vendor/autoload.php' ) ) {
 }
 
 /**
- * Enqueue assets.
+ * Register assets.
  *
  * @return void
  */
