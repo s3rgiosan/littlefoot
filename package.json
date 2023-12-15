@@ -1,0 +1,36 @@
+{
+  "name": "wp-littlefoot",
+  "version": "0.1.0",
+  "description": "Elegant, interactive popups for the Footnotes block.",
+  "contributors": [
+    {
+      "name": "Sérgio Santos",
+      "url": "https://s3rgiosan.dev"
+    },
+    {
+      "name": "Luís Rodrigues",
+      "url": "https://goblindegook.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.15.0",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-preset-env": "^8.1.0"
+  },
+  "dependencies": {
+    "littlefoot": "^4.0.1"
+  }
+}
