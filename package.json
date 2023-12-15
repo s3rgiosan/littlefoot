@@ -1,7 +1,7 @@
 {
   "name": "wp-littlefoot",
   "version": "0.1.0",
-  "description": "Footnotes without the footprint.",
+  "description": "Elegant, interactive popups for the Footnotes block.",
   "contributors": [
     {
       "name": "Sérgio Santos",
