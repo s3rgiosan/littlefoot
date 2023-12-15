@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       littlefoot
- * Description:       Footnotes without the footprint.
+ * Description:       Elegant, interactive popups for the Footnotes block.
  * Plugin URI:        https://github.com/s3rgiosan/wp-littlefoot
  * Requires at least: 6.1
  * Requires PHP:      7.4
