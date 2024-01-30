@@ -5,7 +5,7 @@
  * Plugin URI:        https://github.com/s3rgiosan/wp-littlefoot
  * Requires at least: 6.1
  * Requires PHP:      7.4
- * Version:           0.1.0
+ * Version:           1.0.0
  * Author:            Sérgio Santos
  * Author URI:        https://s3rgiosan.dev/?utm_source=wp-plugins&utm_medium=wp-littlefoot&utm_campaign=author-uri
  * License:           MIT
@@ -94,7 +94,7 @@ function enqueue_assets() {
 add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_assets' );
 
 /**
- * Updates the Footnotes block to use littlefoot.js.
+ * Updates the Footnotes block to use littlefoot.
  *
  * @param  array $metadata Metadata for registering a block type.
  * @return array
@@ -131,3 +131,28 @@ function footnotes_block_metadata( $metadata ) {
 	return $metadata;
 }
 add_filter( 'block_type_metadata', __NAMESPACE__ . '\footnotes_block_metadata' );
+
+/**
+ * Add littlefoot options as a `data-littlefoot` attribute.
+ *
+ * @param  string $block_content The block content.
+ * @param  array  $block         The full block, including name and attributes.
+ * @return string
+ */
+function render_footnotes_block( $block_content, $block ) {
+
+	$is_enabled = $block['attrs']['isLittlefootEnabled'] ?? false;
+
+	if ( ! $is_enabled ) {
+		return $block_content;
+	}
+
+	$tags = new \WP_HTML_Tag_Processor( $block_content );
+	if ( $tags->next_tag( [ 'class_name' => 'wp-block-footnotes' ] ) ) {
+		$tags->set_attribute( 'data-littlefoot', wp_json_encode( $block['attrs'] ) );
+		$block_content = $tags->get_updated_html();
+	}
+
+	return $block_content;
+}
+add_filter( 'render_block_core/footnotes', __NAMESPACE__ . '\render_footnotes_block', 10, 2 );
