@@ -146,7 +146,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 								min={0}
 								max={1000}
 								help={__(
-									'Sets a delay between the activation of the footnote button and the activation of the actual footnote content.',
+									'When the footnote content is being removed this option specifies how long after the active class is removed from the footnote before the element is actually removed from the DOM.',
 									'wp-littlefoot',
 								)}
 							/>
