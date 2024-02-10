@@ -29,6 +29,9 @@ See [littlefoot.js theming](https://github.com/goblindegook/littlefoot/blob/main
 
 Issues and pull requests are welcome in the [GitHub repository](https://github.com/s3rgiosan/wp-littlefoot).
 
+== Screenshots ==
+1. Footnotes block with littlefoot
+
 == Changelog ==
 
 = 1.1.0 - 2024-02-10 =
