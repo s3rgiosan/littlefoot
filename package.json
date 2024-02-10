@@ -34,6 +34,7 @@
     "littlefoot": "^4.0.1"
   },
   "files": [
+    "assets/**",
     "build/**",
     "vendor/**",
     "plugin.php",
