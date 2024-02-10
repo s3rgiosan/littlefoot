@@ -12,14 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			return;
 		}
 
-		if (options.isLittlefootEnabled) {
-			littlefoot({
-				...{
-					scope: '[data-fn]',
-					anchorPattern: /[0-9a-fA-F-]+/gi,
-				},
-				...options,
-			});
-		}
+		littlefoot({
+			...{
+				scope: '[data-fn]',
+				anchorPattern: /[0-9a-fA-F-]+/gi,
+			},
+			...options,
+		});
 	}
 });

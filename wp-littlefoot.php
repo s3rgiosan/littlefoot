@@ -141,12 +141,6 @@ add_filter( 'block_type_metadata', __NAMESPACE__ . '\footnotes_block_metadata' )
  */
 function render_footnotes_block( $block_content, $block ) {
 
-	$is_enabled = $block['attrs']['isLittlefootEnabled'] ?? false;
-
-	if ( ! $is_enabled ) {
-		return $block_content;
-	}
-
 	$tags = new \WP_HTML_Tag_Processor( $block_content );
 	if ( $tags->next_tag( [ 'class_name' => 'wp-block-footnotes' ] ) ) {
 		$tags->set_attribute( 'data-littlefoot', wp_json_encode( $block['attrs'] ) );
