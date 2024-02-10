@@ -32,5 +32,13 @@
   },
   "dependencies": {
     "littlefoot": "^4.0.1"
-  }
+  },
+  "files": [
+    "build/**",
+    "vendor/**",
+    "plugin.php",
+    "changelog.*",
+    "license.*",
+    "readme.*"
+  ]
 }
