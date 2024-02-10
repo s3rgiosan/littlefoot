@@ -6,6 +6,8 @@
 
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
 
+![Footnotes with littlefoot](assets/screenshot-1.gif)
+
 ## Requirements
 
 * PHP 7.4+
