@@ -5,13 +5,14 @@
 ## Description
 
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
+This WordPress plugin extends the WordPress Footnotes block functionality by leveraging littlefoot.
 
 ![Footnotes with littlefoot](assets/screenshot-1.gif)
 
 ## Requirements
 
 * PHP 7.4+
-* WordPress 6.2
+* WordPress 6.4
 
 ## Installation
 

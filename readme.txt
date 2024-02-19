@@ -14,6 +14,7 @@ Elegant, interactive popups for the Footnotes block.
 == Description ==
 
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
+This WordPress plugin extends the WordPress Footnotes block functionality by leveraging littlefoot.
 
 == Installation ==
 1. Install the plugin via the plugin installer, either by searching for it or uploading a .ZIP file.
