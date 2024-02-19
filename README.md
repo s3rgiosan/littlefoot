@@ -6,10 +6,12 @@
 
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
 
+![Footnotes with littlefoot](assets/screenshot-1.gif)
+
 ## Requirements
 
-* PHP 7.4+.
-* WordPress 6.1+.
+* PHP 7.4+
+* WordPress 6.2
 
 ## Installation
 
@@ -61,9 +63,9 @@ Specifies the amount of time (in milliseconds) that must pass after the footnote
 
 Default: `250`
 
-## Theming
+## Styling
 
-Consult [littlefoot.js theming](https://github.com/goblindegook/littlefoot/blob/main/README.md#theming) section.
+See [littlefoot.js theming](https://github.com/goblindegook/littlefoot/blob/main/README.md#theming) section.
 
 ## Changelog
 
