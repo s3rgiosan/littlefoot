@@ -2,17 +2,17 @@
 /**
  * Plugin Name:       littlefoot
  * Description:       Elegant, interactive popups for the Footnotes block.
- * Plugin URI:        https://github.com/s3rgiosan/littlefoot-footnotes-block
+ * Plugin URI:        https://github.com/s3rgiosan/littlefoot
  * Requires at least: 6.1
  * Requires PHP:      7.4
  * Version:           1.1.0
  * Author:            Sérgio Santos
- * Author URI:        https://s3rgiosan.dev/?utm_source=wp-plugins&utm_medium=littlefoot-footnotes-block&utm_campaign=author-uri
+ * Author URI:        https://s3rgiosan.dev/?utm_source=wp-plugins&utm_medium=littlefoot&utm_campaign=author-uri
  * License:           MIT
  * License URI:       https://opensource.org/license/mit/
- * Text Domain:       littlefoot-footnotes-block
+ * Text Domain:       littlefoot
  *
- * @package           s3rgiosan/littlefoot-footnotes-block
+ * @package           s3rgiosan/littlefoot
  */
 
 namespace s3rgiosan\Littlefoot;
@@ -22,11 +22,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'LITTLEFOOT_FOOTNOTES_BLOCK_PATH', plugin_dir_path( __FILE__ ) );
-define( 'LITTLEFOOT_FOOTNOTES_BLOCK_URL', plugin_dir_url( __FILE__ ) );
+define( 'LITTLEFOOT_PATH', plugin_dir_path( __FILE__ ) );
+define( 'LITTLEFOOT_URL', plugin_dir_url( __FILE__ ) );
 
-if ( file_exists( LITTLEFOOT_FOOTNOTES_BLOCK_PATH . 'vendor/autoload.php' ) ) {
-	require_once LITTLEFOOT_FOOTNOTES_BLOCK_PATH . 'vendor/autoload.php';
+if ( file_exists( LITTLEFOOT_PATH . 'vendor/autoload.php' ) ) {
+	require_once LITTLEFOOT_PATH . 'vendor/autoload.php';
 }
 
 /**
@@ -45,7 +45,7 @@ function enqueue_assets() {
 
 		$asset_file = sprintf(
 			'%s/build/%s.asset.php',
-			untrailingslashit( LITTLEFOOT_FOOTNOTES_BLOCK_PATH ),
+			untrailingslashit( LITTLEFOOT_PATH ),
 			$filename
 		);
 
@@ -54,10 +54,10 @@ function enqueue_assets() {
 		$version      = isset( $asset['version'] ) ? $asset['version'] : filemtime( $asset_file );
 
 		wp_register_script(
-			"littlefoot-footnotes-block-$asset_handle",
+			"littlefoot-$asset_handle",
 			sprintf(
 				'%s/build/%s.js',
-				untrailingslashit( LITTLEFOOT_FOOTNOTES_BLOCK_URL ),
+				untrailingslashit( LITTLEFOOT_URL ),
 				$filename
 			),
 			$dependencies,
@@ -74,15 +74,15 @@ function enqueue_assets() {
 
 		$asset_file = sprintf(
 			'%s/build/%s.css',
-			untrailingslashit( LITTLEFOOT_FOOTNOTES_BLOCK_PATH ),
+			untrailingslashit( LITTLEFOOT_PATH ),
 			$filename
 		);
 
 		wp_register_style(
-			"littlefoot-footnotes-block-$asset_handle",
+			"littlefoot-$asset_handle",
 			sprintf(
 				'%s/build/%s.css',
-				untrailingslashit( LITTLEFOOT_FOOTNOTES_BLOCK_URL ),
+				untrailingslashit( LITTLEFOOT_URL ),
 				$filename
 			),
 			[],
@@ -124,7 +124,7 @@ function footnotes_block_metadata( $metadata ) {
 			$metadata[ $field_name ] = [ $metadata[ $field_name ] ];
 		}
 
-		$metadata[ $field_name ][] = "littlefoot-footnotes-block-$asset_handle";
+		$metadata[ $field_name ][] = "littlefoot-$asset_handle";
 	}
 
 	return $metadata;

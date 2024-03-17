@@ -70,10 +70,10 @@ const addInspectorControls = (BlockEdit) => (props) => {
 		<>
 			<BlockEdit {...props} />
 			<InspectorControls>
-				<PanelBody title={__('Littlefoot Options', 'littlefoot-footnotes-block')}>
+				<PanelBody title={__('Littlefoot Options', 'littlefoot')}>
 					<PanelRow>
 						<ToggleControl
-							label={__('Allow duplicates', 'littlefoot-footnotes-block')}
+							label={__('Allow duplicates', 'littlefoot')}
 							checked={allowDuplicates}
 							onChange={(value) => setAttributes({ allowDuplicates: value })}
 							help={__(
@@ -84,7 +84,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Allow multiple', 'littlefoot-footnotes-block')}
+							label={__('Allow multiple', 'littlefoot')}
 							checked={allowMultiple}
 							onChange={(value) => setAttributes({ allowMultiple: value })}
 							help={__(
@@ -95,7 +95,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Dismiss on unhover', 'littlefoot-footnotes-block')}
+							label={__('Dismiss on unhover', 'littlefoot')}
 							checked={dismissOnUnhover}
 							onChange={(value) => setAttributes({ dismissOnUnhover: value })}
 							help={__(
@@ -106,40 +106,40 @@ const addInspectorControls = (BlockEdit) => (props) => {
 					</PanelRow>
 					<PanelRow>
 						<RangeControl
-							label={__('Activate Delay', 'littlefoot-footnotes-block')}
+							label={__('Activate Delay', 'littlefoot')}
 							value={activateDelay}
 							onChange={(value) => setAttributes({ activateDelay: value })}
 							min={0}
 							max={1000}
 							help={__(
 								'Sets a delay between the activation of the footnote button and the activation of the actual footnote content.',
-								'littlefoot-footnotes-block',
+								'littlefoot',
 							)}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<RangeControl
-							label={__('Dismiss Delay', 'littlefoot-footnotes-block')}
+							label={__('Dismiss Delay', 'littlefoot')}
 							value={dismissDelay}
 							onChange={(value) => setAttributes({ dismissDelay: value })}
 							min={0}
 							max={1000}
 							help={__(
 								'When the footnote content is being removed this option specifies how long after the active class is removed from the footnote before the element is actually removed from the DOM.',
-								'littlefoot-footnotes-block',
+								'littlefoot',
 							)}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<RangeControl
-							label={__('Hover Delay', 'littlefoot-footnotes-block')}
+							label={__('Hover Delay', 'littlefoot')}
 							value={hoverDelay}
 							onChange={(value) => setAttributes({ hoverDelay: value })}
 							min={0}
 							max={1000}
 							help={__(
 								'Specifies the amount of time (in milliseconds) that must pass after the footnote button/content is un-hovered before the footnote is dismissed.',
-								'littlefoot-footnotes-block',
+								'littlefoot',
 							)}
 						/>
 					</PanelRow>

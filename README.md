@@ -16,9 +16,9 @@ This WordPress plugin extends the WordPress Footnotes block functionality by lev
 
 ## Installation
 
-`composer require s3rgiosan/littlefoot-footnotes-block`
+`composer require s3rgiosan/littlefoot`
 
-1. Download and extract the [.zip file](https://github.com/s3rgiosan/littlefoot-footnotes-block/archive/refs/heads/main.zip).
+1. Download and extract the [.zip file](https://github.com/s3rgiosan/littlefoot/archive/refs/heads/main.zip).
 2. Install the plugin via the plugin installer by uploading the .zip file.
 3. Activate the plugin.
 
@@ -70,4 +70,4 @@ See [littlefoot.js theming](https://github.com/goblindegook/littlefoot/blob/main
 
 ## Changelog
 
-A complete listing of all notable changes to this project are documented in [CHANGELOG.md](https://github.com/s3rgiosan/littlefoot-footnotes-block/blob/main/CHANGELOG.md).
+A complete listing of all notable changes to this project are documented in [CHANGELOG.md](https://github.com/s3rgiosan/littlefoot/blob/main/CHANGELOG.md).
