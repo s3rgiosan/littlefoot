@@ -28,7 +28,7 @@ See [littlefoot.js theming](https://github.com/goblindegook/littlefoot/blob/main
 
 = How can I contribute? =
 
-Issues and pull requests are welcome in the [GitHub repository](https://github.com/s3rgiosan/wp-littlefoot).
+Issues and pull requests are welcome in the [GitHub repository](https://github.com/s3rgiosan/littlefoot-footnotes-block).
 
 == Screenshots ==
 1. Footnotes block with littlefoot
