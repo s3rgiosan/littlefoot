@@ -37,6 +37,7 @@ Issues and pull requests are welcome in the [GitHub repository](https://github.c
 
 = 1.3.0 - 2024-11-15 =
 * **Changed:** Bump WordPress version "tested up to" 6.7.
+* **Changed:** Update littlefoot.js to 4.1.2.
 
 = 1.2.0 - 2024-03-17 =
 * **Changed:** Plugin name.

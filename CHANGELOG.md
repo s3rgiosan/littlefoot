@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 ### Changed
 
 - Bump WordPress version "tested up to" 6.7.
+- Update littlefoot.js to 4.1.2.
 
 ## [1.2.0] - 2024-03-17
 
