@@ -2,9 +2,9 @@
 Contributors: s3rgiosan, goblindegook
 Donate link: https://ko-fi.com/s3rgiosan
 Tags: footnotes, littlefoot, bigfoot, block
-Requires at least: 6.2
-Tested up to: 6.4
-Stable tag: 1.1.0
+Requires at least: 6.4
+Tested up to: 6.7
+Stable tag: 1.3.0
 Requires PHP: 7.4
 License: MIT
 License URI: https://opensource.org/license/mit/
@@ -34,6 +34,12 @@ Issues and pull requests are welcome in the [GitHub repository](https://github.c
 1. Footnotes block with littlefoot
 
 == Changelog ==
+
+= 1.3.0 - 2024-11-15 =
+* **Changed:** Bump WordPress version "tested up to" 6.7.
+
+= 1.2.0 - 2024-03-17 =
+* **Changed:** Plugin name.
 
 = 1.1.0 - 2024-02-10 =
 * **Removed:** "Enable" toggle control. Littlefoot will always be enabled if the plugin is active.

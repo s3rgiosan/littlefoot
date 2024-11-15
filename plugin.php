@@ -3,9 +3,9 @@
  * Plugin Name:       littlefoot
  * Description:       Elegant, interactive popups for the Footnotes block.
  * Plugin URI:        https://github.com/s3rgiosan/littlefoot
- * Requires at least: 6.1
+ * Requires at least: 6.4
  * Requires PHP:      7.4
- * Version:           1.1.0
+ * Version:           1.3.0
  * Author:            Sérgio Santos
  * Author URI:        https://s3rgiosan.dev/?utm_source=wp-plugins&utm_medium=littlefoot&utm_campaign=author-uri
  * License:           MIT
