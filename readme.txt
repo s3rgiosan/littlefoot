@@ -1,4 +1,4 @@
-=== Littlefoot ===
+=== Littlefoot for Footnotes ===
 Contributors: s3rgiosan, goblindegook
 Donate link: https://ko-fi.com/s3rgiosan
 Tags: footnotes, littlefoot, bigfoot, block
@@ -14,11 +14,12 @@ Elegant, interactive popups for the Footnotes block.
 == Description ==
 
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
-This WordPress plugin extends the WordPress Footnotes block functionality by leveraging littlefoot.
+This WordPress plugin extends the functionality of the Footnotes block, seamlessly integrating the littlefoot JavaScript library to transform static footnotes into interactive popups.
 
 == Installation ==
-1. Install the plugin via the plugin installer, either by searching for it or uploading a .ZIP file.
-2. Activate the plugin.
+1. Navigate to Plugins > Add New in your WordPress admin area.
+2. Search for "Littlefoot for Footnotes".
+3. Click Install Now, then Activate.
 
 == Frequently Asked Questions ==
 
@@ -38,6 +39,7 @@ Issues and pull requests are welcome in the [GitHub repository](https://github.c
 = 1.3.0 - 2024-11-15 =
 * **Changed:** Bump WordPress version "tested up to" 6.7.
 * **Changed:** Update littlefoot.js to 4.1.2.
+* **Changed:** Plugin description.
 
 = 1.2.0 - 2024-03-17 =
 * **Changed:** Plugin name.

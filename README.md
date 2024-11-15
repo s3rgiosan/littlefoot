@@ -1,11 +1,11 @@
-# littlefoot
+# Littlefoot for Footnotes
 
 > Elegant, interactive popups for the Footnotes block.
 
 ## Description
 
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
-This WordPress plugin extends the WordPress Footnotes block functionality by leveraging littlefoot.
+This WordPress plugin extends the functionality of the Footnotes block, seamlessly integrating the littlefoot JavaScript library to transform static footnotes into interactive popups.
 
 ![Footnotes with littlefoot](assets/screenshot-1.gif)
 
@@ -16,11 +16,31 @@ This WordPress plugin extends the WordPress Footnotes block functionality by lev
 
 ## Installation
 
-`composer require s3rgiosan/littlefoot`
+### From the WordPress Plugin Directory:
 
-1. Download and extract the [.zip file](https://github.com/s3rgiosan/littlefoot/archive/refs/heads/main.zip).
-2. Install the plugin via the plugin installer by uploading the .zip file.
-3. Activate the plugin.
+1. Navigate to Plugins > Add New in your WordPress admin area.
+2. Search for "Littlefoot for Footnotes".
+3. Click Install Now, then Activate.
+
+### Manual Installation:
+
+1. Download the plugin ZIP file from the GitHub repository or WordPress directory.
+2. Go to Plugins > Add New > Upload Plugin in your WordPress admin area.
+3. Upload the ZIP file and click Install Now.
+4. Activate the plugin.
+
+### Install with Composer:
+
+To include this plugin as a dependency in your Composer-managed WordPress project:
+
+1. Add the plugin to your project using the following command:
+
+```bash
+composer require s3rgiosan/littlefoot
+```
+
+2. Run `composer install` to install the plugin.
+3. Activate the plugin from your WordPress admin area or using WP-CLI.
 
 ## Usage
 

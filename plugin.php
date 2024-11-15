@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       littlefoot
+ * Plugin Name:       Littlefoot for Footnotes
  * Description:       Elegant, interactive popups for the Footnotes block.
  * Plugin URI:        https://github.com/s3rgiosan/littlefoot
  * Requires at least: 6.4
@@ -15,18 +15,18 @@
  * @package           s3rgiosan/littlefoot
  */
 
-namespace s3rgiosan\Littlefoot;
+namespace s3rgiosan\WP\Littlefoot;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'LITTLEFOOT_PATH', plugin_dir_path( __FILE__ ) );
-define( 'LITTLEFOOT_URL', plugin_dir_url( __FILE__ ) );
+define( 'S3RGIOSAN_LITTLEFOOT_PATH', plugin_dir_path( __FILE__ ) );
+define( 'S3RGIOSAN_LITTLEFOOT_URL', plugin_dir_url( __FILE__ ) );
 
-if ( file_exists( LITTLEFOOT_PATH . 'vendor/autoload.php' ) ) {
-	require_once LITTLEFOOT_PATH . 'vendor/autoload.php';
+if ( file_exists( S3RGIOSAN_LITTLEFOOT_PATH . 'vendor/autoload.php' ) ) {
+	require_once S3RGIOSAN_LITTLEFOOT_PATH . 'vendor/autoload.php';
 }
 
 /**
@@ -45,7 +45,7 @@ function enqueue_assets() {
 
 		$asset_file = sprintf(
 			'%s/build/%s.asset.php',
-			untrailingslashit( LITTLEFOOT_PATH ),
+			untrailingslashit( S3RGIOSAN_LITTLEFOOT_PATH ),
 			$filename
 		);
 
@@ -57,7 +57,7 @@ function enqueue_assets() {
 			"littlefoot-$asset_handle",
 			sprintf(
 				'%s/build/%s.js',
-				untrailingslashit( LITTLEFOOT_URL ),
+				untrailingslashit( S3RGIOSAN_LITTLEFOOT_URL ),
 				$filename
 			),
 			$dependencies,
@@ -74,7 +74,7 @@ function enqueue_assets() {
 
 		$asset_file = sprintf(
 			'%s/build/%s.css',
-			untrailingslashit( LITTLEFOOT_PATH ),
+			untrailingslashit( S3RGIOSAN_LITTLEFOOT_PATH ),
 			$filename
 		);
 
@@ -82,7 +82,7 @@ function enqueue_assets() {
 			"littlefoot-$asset_handle",
 			sprintf(
 				'%s/build/%s.css',
-				untrailingslashit( LITTLEFOOT_URL ),
+				untrailingslashit( S3RGIOSAN_LITTLEFOOT_URL ),
 				$filename
 			),
 			[],
