@@ -12,7 +12,7 @@
  * License URI:       https://opensource.org/license/mit/
  * Text Domain:       littlefoot
  *
- * @package           s3rgiosan/Littlefoot
+ * @package           Littlefoot
  */
 
 namespace s3rgiosan\WP\Littlefoot;
