@@ -90,6 +90,7 @@ function enqueue_assets() {
 		);
 	}
 }
+
 add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_assets' );
 
 /**
@@ -129,6 +130,7 @@ function footnotes_block_metadata( $metadata ) {
 
 	return $metadata;
 }
+
 add_filter( 'block_type_metadata', __NAMESPACE__ . '\footnotes_block_metadata' );
 
 /**
@@ -148,4 +150,5 @@ function render_footnotes_block( $block_content, $block ) {
 
 	return $block_content;
 }
+
 add_filter( 'render_block_core/footnotes', __NAMESPACE__ . '\render_footnotes_block', 10, 2 );

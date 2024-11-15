@@ -49,6 +49,7 @@ const addAttributes = (settings, name) => {
 		},
 	};
 };
+
 addFilter('blocks.registerBlockType', 'littlefoot/addAttributes', addAttributes);
 
 const addInspectorControls = (BlockEdit) => (props) => {
@@ -148,4 +149,5 @@ const addInspectorControls = (BlockEdit) => (props) => {
 		</>
 	);
 };
+
 addFilter('editor.BlockEdit', 'littlefoot/addInspectorControls', addInspectorControls);
