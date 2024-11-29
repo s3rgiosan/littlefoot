@@ -42,10 +42,6 @@ composer require s3rgiosan/littlefoot
 2. Run `composer install` to install the plugin.
 3. Activate the plugin from your WordPress admin area or using WP-CLI.
 
-## Usage
-
-This plugin requires no configuration.
-
 ## Options
 
 ### `activateDelay`

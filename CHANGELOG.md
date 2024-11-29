@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [1.3.1] - 2024-11-29
+
+### Changed
+
+- Namespace and constant prefix.
+
 ## [1.3.0] - 2024-11-15
 
 ### Changed

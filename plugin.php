@@ -5,7 +5,7 @@
  * Plugin URI:        https://github.com/s3rgiosan/littlefoot
  * Requires at least: 6.4
  * Requires PHP:      7.4
- * Version:           1.3.0
+ * Version:           1.3.1
  * Author:            Sérgio Santos
  * Author URI:        https://s3rgiosan.dev/?utm_source=wp-plugins&utm_medium=littlefoot&utm_campaign=author-uri
  * License:           MIT
@@ -15,18 +15,18 @@
  * @package           Littlefoot
  */
 
-namespace s3rgiosan\WP\Littlefoot;
+namespace S3S\WP\Littlefoot;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'S3RGIOSAN_LITTLEFOOT_PATH', plugin_dir_path( __FILE__ ) );
-define( 'S3RGIOSAN_LITTLEFOOT_URL', plugin_dir_url( __FILE__ ) );
+define( 'S3S_LITTLEFOOT_PATH', plugin_dir_path( __FILE__ ) );
+define( 'S3S_LITTLEFOOT_URL', plugin_dir_url( __FILE__ ) );
 
-if ( file_exists( S3RGIOSAN_LITTLEFOOT_PATH . 'vendor/autoload.php' ) ) {
-	require_once S3RGIOSAN_LITTLEFOOT_PATH . 'vendor/autoload.php';
+if ( file_exists( S3S_LITTLEFOOT_PATH . 'vendor/autoload.php' ) ) {
+	require_once S3S_LITTLEFOOT_PATH . 'vendor/autoload.php';
 }
 
 /**
@@ -45,7 +45,7 @@ function enqueue_assets() {
 
 		$asset_file = sprintf(
 			'%s/build/%s.asset.php',
-			untrailingslashit( S3RGIOSAN_LITTLEFOOT_PATH ),
+			untrailingslashit( S3S_LITTLEFOOT_PATH ),
 			$filename
 		);
 
@@ -57,7 +57,7 @@ function enqueue_assets() {
 			"littlefoot-$asset_handle",
 			sprintf(
 				'%s/build/%s.js',
-				untrailingslashit( S3RGIOSAN_LITTLEFOOT_URL ),
+				untrailingslashit( S3S_LITTLEFOOT_URL ),
 				$filename
 			),
 			$dependencies,
@@ -74,7 +74,7 @@ function enqueue_assets() {
 
 		$asset_file = sprintf(
 			'%s/build/%s.css',
-			untrailingslashit( S3RGIOSAN_LITTLEFOOT_PATH ),
+			untrailingslashit( S3S_LITTLEFOOT_PATH ),
 			$filename
 		);
 
@@ -82,7 +82,7 @@ function enqueue_assets() {
 			"littlefoot-$asset_handle",
 			sprintf(
 				'%s/build/%s.css',
-				untrailingslashit( S3RGIOSAN_LITTLEFOOT_URL ),
+				untrailingslashit( S3S_LITTLEFOOT_URL ),
 				$filename
 			),
 			[],
