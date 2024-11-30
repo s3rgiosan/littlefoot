@@ -7,7 +7,7 @@
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
 This WordPress plugin extends the functionality of the Footnotes block, seamlessly integrating the littlefoot JavaScript library to transform static footnotes into interactive popups.
 
-![Footnotes with littlefoot](assets/screenshot-1.gif)
+![Littlefoot for Footnotes](assets/screenshot-1.gif)
 
 ## Requirements
 
