@@ -31,13 +31,11 @@ if ( file_exists( S3S_LITTLEFOOT_PATH . 'vendor/autoload.php' ) ) {
 	require_once S3S_LITTLEFOOT_PATH . 'vendor/autoload.php';
 }
 
-$updater = PucFactory::buildUpdateChecker(
+PucFactory::buildUpdateChecker(
 	'https://github.com/s3rgiosan/littlefoot/',
 	__FILE__,
 	'littlefoot'
-);
-
-$updater->setBranch( 'main' );
+)->setBranch( 'main' );
 
 /**
  * Register assets.
