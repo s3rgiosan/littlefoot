@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [Unreleased]
+
+### Removed
+
+- WordPress.org installation steps.
+
 ## [1.4.1] - 2024-12-07
 
 ### Changed
