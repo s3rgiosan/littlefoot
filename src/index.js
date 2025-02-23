@@ -71,7 +71,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 		<>
 			<BlockEdit {...props} />
 			<InspectorControls>
-				<PanelBody title={__('Littlefoot Options', 'littlefoot')}>
+				<PanelBody title={__('Littlefoot', 'littlefoot')}>
 					<PanelRow>
 						<ToggleControl
 							label={__('Allow duplicates', 'littlefoot')}
@@ -81,6 +81,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 								'Determines whether or not a footnote can be used as the content for multiple footnote buttons.',
 								'wp-littelfoot',
 							)}
+							__nextHasNoMarginBottom
 						/>
 					</PanelRow>
 					<PanelRow>
@@ -92,6 +93,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 								'Specifies whether or not multiple footnote popovers can be active simultaneously.',
 								'wp-littelfoot',
 							)}
+							__nextHasNoMarginBottom
 						/>
 					</PanelRow>
 					<PanelRow>
@@ -103,6 +105,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 								'Determines whether footnotes that were presented when hovering on a footnote button are dismissed once the footnote button or footnote popover is un-hovered.',
 								'wp-littelfoot',
 							)}
+							__nextHasNoMarginBottom
 						/>
 					</PanelRow>
 					<PanelRow>
@@ -116,6 +119,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 								'Sets a delay between the activation of the footnote button and the activation of the actual footnote content.',
 								'littlefoot',
 							)}
+							__nextHasNoMarginBottom
 						/>
 					</PanelRow>
 					<PanelRow>
@@ -129,6 +133,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 								'When the footnote content is being removed this option specifies how long after the active class is removed from the footnote before the element is actually removed from the DOM.',
 								'littlefoot',
 							)}
+							__nextHasNoMarginBottom
 						/>
 					</PanelRow>
 					<PanelRow>
@@ -142,6 +147,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 								'Specifies the amount of time (in milliseconds) that must pass after the footnote button/content is un-hovered before the footnote is dismissed.',
 								'littlefoot',
 							)}
+							__nextHasNoMarginBottom
 						/>
 					</PanelRow>
 				</PanelBody>
