@@ -3,7 +3,7 @@
  * Plugin Name:       Littlefoot for Footnotes
  * Description:       Elegant, interactive popups for the Footnotes block.
  * Plugin URI:        https://github.com/s3rgiosan/littlefoot
- * Requires at least: 6.4
+ * Requires at least: 6.5
  * Requires PHP:      7.4
  * Version:           1.5.0
  * Author:            Sérgio Santos
