@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ### Changed
 
-- Update URI
+- Update URI tag
+- Requires at least tag
 
 ## [1.5.0] - 2025-03-02
 
