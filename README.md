@@ -81,3 +81,9 @@ See [littlefoot.js theming](https://github.com/goblindegook/littlefoot/blob/main
 ## Changelog
 
 A complete listing of all notable changes to this project are documented in [CHANGELOG.md](https://github.com/s3rgiosan/littlefoot/blob/main/CHANGELOG.md).
+
+## License and Attribution
+
+This plugin is licensed under MIT.
+
+This project incorporates [littlefoot.js](https://littlefoot.js.org/), which is licensed under the [MIT License](https://github.com/goblindegook/littlefoot/blob/main/LICENSE).
