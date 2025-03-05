@@ -12,7 +12,7 @@ This WordPress plugin extends the functionality of the Footnotes block, seamless
 ## Requirements
 
 * PHP 7.4+
-* WordPress 6.4
+* WordPress 6.5
 
 ## Installation
 
