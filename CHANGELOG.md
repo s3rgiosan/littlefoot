@@ -2,22 +2,23 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
-## [Unreleased]
+## [1.5.1] - 2025-08-15
 
 ### Changed
 
-- Update URI tag
-- Requires at least tag
+- Update dependencies.
+- Update URI tag.
+- Update "Requires at least" tag.
 
 ## [1.5.0] - 2025-03-02
 
 ### Changed
 
-- Minor UI tweaks.
+- Add minor UI tweaks.
 
 ### Removed
 
-- WordPress.org installation steps.
+- Remove WordPress.org installation steps.
 
 ## [1.4.1] - 2024-12-07
 
@@ -35,7 +36,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ### Changed
 
-- Namespace and constant prefix.
+- Update namespace and constant prefix.
 
 ## [1.3.0] - 2024-11-15
 
@@ -43,19 +44,19 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 - Bump WordPress version "tested up to" 6.7.
 - Update littlefoot.js to 4.1.2.
-- Plugin description.
+- Update plugin description.
 
 ## [1.2.0] - 2024-03-17
 
 ### Changed
 
-- Plugin name.
+- Update plugin name.
 
 ## [1.1.0] - 2024-02-19
 
 ### Removed
 
-- "Enable" toggle control. Littlefoot will always be enabled if the plugin is active.
+- Remove "Enable" toggle control. Littlefoot will always be enabled if the plugin is active.
 
 ## [1.0.0] - 2024-01-30
 

@@ -9,11 +9,6 @@ This WordPress plugin extends the functionality of the Footnotes block, seamless
 
 ![Littlefoot for Footnotes](assets/screenshot-1.gif)
 
-## Requirements
-
-* PHP 7.4+
-* WordPress 6.5
-
 ## Installation
 
 ### Manual Installation:
