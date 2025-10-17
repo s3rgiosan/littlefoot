@@ -13,8 +13,6 @@
  * Update URI:        https://s3rgiosan.dev/
  * GitHub Plugin URI: https://github.com/s3rgiosan/littlefoot
  * Text Domain:       littlefoot
- *
- * @package           Littlefoot
  */
 
 namespace S3S\WP\Littlefoot;
