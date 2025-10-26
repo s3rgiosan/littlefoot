@@ -5,7 +5,7 @@
  * Plugin URI:        https://github.com/s3rgiosan/littlefoot
  * Requires at least: 6.7
  * Requires PHP:      7.4
- * Version:           1.5.1
+ * Version:           1.6.0
  * Author:            Sérgio Santos
  * Author URI:        https://s3rgiosan.dev/?utm_source=wp-plugins&utm_medium=littlefoot&utm_campaign=author-uri
  * License:           MIT
@@ -35,7 +35,7 @@ PucFactory::buildUpdateChecker(
 	'https://github.com/s3rgiosan/littlefoot/',
 	__FILE__,
 	'littlefoot'
-)->setBranch( 'main' );
+);
 
 /**
  * Register assets.
