@@ -12,7 +12,11 @@
       "homepage": "https://goblindegook.com"
     }
   ],
-  "autoload": {},
+  "autoload": {
+    "psr-4": {
+      "S3S\\WP\\Littlefoot\\": "includes/"
+    }
+  },
   "require": {
     "php": "^7.4|^8.0",
     "composer-plugin-api": "^2.3",

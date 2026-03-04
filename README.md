@@ -9,6 +9,11 @@ This WordPress plugin extends the functionality of the Footnotes block, seamless
 
 ![Littlefoot for Footnotes](assets/screenshot-1.gif)
 
+## Requirements
+
+- WordPress 6.7 or later
+- PHP 7.4 or later
+
 ## Installation
 
 ### Manual Installation
@@ -30,6 +35,13 @@ composer require s3rgiosan/littlefoot
 
 2. Run `composer install` to install the plugin.
 3. Activate the plugin from your WordPress admin area or using WP-CLI.
+
+## Usage
+
+1. Add a [Footnotes block](https://wordpress.org/documentation/article/footnotes-block/) to your post or page.
+2. Select the Footnotes block and open the block settings in the sidebar.
+3. Configure the littlefoot options under the **Littlefoot** panel.
+4. Publish or update your post — footnotes will automatically appear as interactive popups on the frontend.
 
 ## Options
 

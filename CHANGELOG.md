@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [1.7.0] - 2026-03-04
+
+### Added
+
+- Add i18n support with `load_plugin_textdomain`.
+- Add server-side validation for block attributes.
+
+### Changed
+
+- Refactor plugin to use singleton pattern.
+- Add PSR-4 autoloading.
+
+### Fixed
+
+- Fix incorrect text domain in editor controls.
+
 ## [1.6.0] - 2025-10-26
 
 ### Changed
