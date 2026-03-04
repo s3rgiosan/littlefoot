@@ -79,7 +79,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 							onChange={(value) => setAttributes({ allowDuplicates: value })}
 							help={__(
 								'Determines whether or not a footnote can be used as the content for multiple footnote buttons.',
-								'wp-littelfoot',
+								'littlefoot',
 							)}
 							__nextHasNoMarginBottom
 						/>
@@ -91,7 +91,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 							onChange={(value) => setAttributes({ allowMultiple: value })}
 							help={__(
 								'Specifies whether or not multiple footnote popovers can be active simultaneously.',
-								'wp-littelfoot',
+								'littlefoot',
 							)}
 							__nextHasNoMarginBottom
 						/>
@@ -103,7 +103,7 @@ const addInspectorControls = (BlockEdit) => (props) => {
 							onChange={(value) => setAttributes({ dismissOnUnhover: value })}
 							help={__(
 								'Determines whether footnotes that were presented when hovering on a footnote button are dismissed once the footnote button or footnote popover is un-hovered.',
-								'wp-littelfoot',
+								'littlefoot',
 							)}
 							__nextHasNoMarginBottom
 						/>
