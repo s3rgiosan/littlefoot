@@ -3,7 +3,7 @@
         'name' => 's3rgiosan/littlefoot',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b8f14dfcf4882ba1730e87423a2783a0f91ea062',
+        'reference' => 'a2b3a50407968d5a9fefe45342f199cb26f31181',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         's3rgiosan/littlefoot' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b8f14dfcf4882ba1730e87423a2783a0f91ea062',
+            'reference' => 'a2b3a50407968d5a9fefe45342f199cb26f31181',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

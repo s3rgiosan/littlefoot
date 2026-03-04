@@ -10,13 +10,30 @@ class ComposerStaticInit92fc31279d17ec6756157627b1dd173c
         'f6d4f6bcee7247df6b777884c3e22f98' => __DIR__ . '/..' . '/yahnis-elsts/plugin-update-checker/load-v5p6.php',
     );
 
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'S3S\\WP\\Littlefoot\\' => 18,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'S3S\\WP\\Littlefoot\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/includes',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'S3S\\WP\\Littlefoot\\Plugin' => __DIR__ . '/../..' . '/includes/Plugin.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit92fc31279d17ec6756157627b1dd173c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit92fc31279d17ec6756157627b1dd173c::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit92fc31279d17ec6756157627b1dd173c::$classMap;
 
         }, null, ClassLoader::class);

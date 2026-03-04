@@ -6,4 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'S3S\\WP\\Littlefoot\\' => array($baseDir . '/includes'),
 );
