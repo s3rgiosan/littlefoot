@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [1.8.0] - 2026-04-22
+
+### Changed
+
+- Defer plugin setup to the `plugins_loaded` hook.
+
 ## [1.7.0] - 2026-03-04
 
 ### Added
