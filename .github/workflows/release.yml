@@ -1,0 +1,13 @@
+name: Release
+
+on:
+  push:
+    tags: ['*.*.*']
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    uses: s3rgiosan/.github/.github/workflows/wp-plugin-release.yml@main
+    with:
+      slug: littlefoot
