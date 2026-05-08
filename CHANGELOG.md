@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased]
 
+## [1.8.1] - 2026-05-08
+
 - Added automated GitHub Release packaging via reusable release workflow; installation now points to the latest release ZIP.
 
 ## [1.8.0] - 2026-04-22
