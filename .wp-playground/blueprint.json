@@ -1,0 +1,28 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/?playground_demo=1",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "login": true,
+  "steps": [
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/mu-plugins/playground-demo.php",
+      "data": "<?php\nadd_action('template_redirect', function () {\n    if (empty($_GET['playground_demo'])) {\n        return;\n    }\n    $post = get_page_by_path('playground-demo', OBJECT, 'post');\n    if ($post) {\n        wp_safe_redirect(get_permalink($post->ID));\n        exit;\n    }\n    wp_safe_redirect(admin_url('post-new.php'));\n    exit;\n});\n"
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "git:directory",
+        "url": "https://github.com/s3rgiosan/littlefoot",
+        "ref": "main",
+        "refType": "branch",
+        "path": "/"
+      },
+      "options": { "activate": true }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; $fn1 = '11111111-1111-4111-8111-111111111111'; $fn2 = '22222222-2222-4222-8222-222222222222'; $content = '<!-- wp:paragraph --><p>Hover or tap the numbered references in this paragraph to see static footnotes turn into elegant interactive popovers<sup data-fn=\"'.$fn1.'\" class=\"fn\"><a href=\"#'.$fn1.'\" id=\"'.$fn1.'-link\">1</a></sup>. Littlefoot enhances the core Footnotes block automatically on the frontend<sup data-fn=\"'.$fn2.'\" class=\"fn\"><a href=\"#'.$fn2.'\" id=\"'.$fn2.'-link\">2</a></sup>.</p><!-- /wp:paragraph -->'.\"\\n\\n\".'<!-- wp:footnotes /-->'; $footnotes = array(array('content' => 'This popover is powered by the littlefoot.js library.', 'id' => $fn1), array('content' => 'Footnote references are scoped via the <code>data-fn</code> attribute.', 'id' => $fn2)); $post_id = wp_insert_post(array('post_title' => 'Littlefoot for Footnotes Demo', 'post_name' => 'playground-demo', 'post_status' => 'publish', 'post_type' => 'post', 'post_content' => $content)); update_post_meta($post_id, 'footnotes', wp_json_encode($footnotes));"
+    }
+  ]
+}

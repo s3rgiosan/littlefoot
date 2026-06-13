@@ -2,6 +2,8 @@
 
 > Elegant, interactive popups for the Footnotes block.
 
+[![Try in WordPress Playground](https://img.shields.io/badge/Try%20in-WordPress%20Playground-3858E9?logo=wordpress&logoColor=white)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/s3rgiosan/littlefoot/main/.wp-playground/blueprint.json)
+
 ## Description
 
 Elevate your website's user experience by incorporating lightweight and visually appealing footnotes using [littlefoot](https://github.com/goblindegook/littlefoot).
